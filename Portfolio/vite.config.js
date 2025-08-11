@@ -3,7 +3,7 @@ import { globSync } from 'glob';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: './', 
+  base: '/', 
   build: {
     rollupOptions: {
       input: Object.fromEntries(
