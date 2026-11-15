@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Charles Emejulu's Portfolio</title>
+        <title>Charles Emejulu | Cybersecurity Analyst Portfolio</title>
+        <meta name="description" content="Charles Emejulu: CompTIA Security+ and SAL1 certified cybersecurity analyst targeting Tier 1 SOC roles. SIEM labs, incident investigations and case studies.">
+
+        <!-- Link preview (LinkedIn, WhatsApp, etc.) -->
+        <meta property="og:title" content="Charles Emejulu | Cybersecurity Analyst Portfolio">
+        <meta property="og:description" content="Security+ and SAL1 certified. Hands-on SOC labs in Splunk, Microsoft Sentinel and Elastic.">
+        <meta property="og:image" content="img/Charles-profile.jpg">
+        <meta property="og:type" content="website">
+
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="img/Modern _emejulu.security_ Logo Design.png" alt="personal logo" class="logo_img">
+                <!-- Rename the logo file to remove spaces: img/logo.png -->
+                <img src="img/logo.png" alt="emejulu.security logo" class="logo_img">
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -26,40 +31,50 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">What I Do</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#certificates" class="nav__link">Certificates</a></li>
                     <li class="nav__item"><a href="#personal" class="nav__link">Personal</a></li>
                 </ul>
             </nav>
         </header>
-        
+
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
                 Hi, I am <strong>Charles Emejulu</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">SOC Analyst | CompTIA Security+ Certified| SAL1 Certified</p>
+            <p class="section__subtitle section__subtitle--intro">Aspiring SOC Analyst | CompTIA Security+ | TryHackMe SAL1 Certified</p>
             <img src="img/Charles-profile.jpg" alt="A profile picture of Charles Emejulu" class="intro__img">
         </section>
-        
+
+        <section class="my-services" id="services">
             <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
                 <div class="service">
                     <h3>Cybersecurity Training</h3>
                     <p>
-                        I've built hands-on SOC analyst skills through TryHackMe, completing the SOC Level 1 
-                        path and passing the SAL1 practical assessment with 100% accuracy across 48 alerts, 
-                        covering log analysis, threat detection, and incident investigation.
+                        I completed TryHackMe's SOC Level 1 path and passed the SAL1 practical assessment
+                        with 100% accuracy across 48 alerts, covering log analysis, threat detection and
+                        incident investigation. I am now working through the SOC Level 2 path.
                     </p>
                 </div>
 
                 <div class="service">
                     <h3>SOC-Relevant Experience</h3>
                     <p>
-                         In my current role, I monitor live incidents, assess severity, and escalate 10-20+ cases 
-                         per shift, producing structured documentation throughout. This mirrors core SOC 
-                         responsibilities: triage, severity assessment, and escalation.
+                        In my current role, I monitor live incidents, assess severity and escalate 10-20+ cases
+                        per shift, producing structured documentation throughout. This mirrors core SOC
+                        responsibilities: triage, severity assessment and escalation.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>AI Generalist Expert, Mercor</h3>
+                    <p>
+                        I work remotely on project-based AI assignments, reviewing AI outputs against
+                        detailed guidelines with a focus on accuracy and clear written reasoning. This builds
+                        towards my longer-term interest in AI security.
                     </p>
                 </div>
             </div>
@@ -72,133 +87,135 @@
 
             <div class="about-me__body">
                 <p>
-                     I'm a CompTIA Security+ certified SOC analyst with hands-on experience across Splunk, 
-                     Microsoft Sentinel, and Elastic, backed by 300+ hours of lab work and a 100% accuracy 
-                     score on TryHackMe's SAL1 practical assessment. My background in JavaScript and React 
-                     gives me a working understanding of how web applications are built and where they're 
-                     vulnerable, from client-server communication to common attack surfaces like injection 
-                     and XSS, which feeds directly into how I approach investigation and defensive analysis.
+                    I'm a CompTIA Security+ and SAL1 certified cybersecurity analyst with hands-on experience
+                    across Splunk, Microsoft Sentinel and Elastic, backed by 300+ hours of lab work. My
+                    background in JavaScript and React gives me a working understanding of how web applications
+                    are built and where they're vulnerable, from client-server communication to common attack
+                    surfaces like injection and XSS, which feeds directly into how I approach investigation
+                    and defensive analysis.
                 </p>
 
                 <p>
-                    In my current role, I monitor operational incidents, document events, assess severity, 
-                    and escalate when required, handling 10-20+ cases per shift. This has sharpened skills 
-                    directly relevant to SOC work: alert triage, incident handling, and clear structured reporting 
-                    under pressure.
+                    In my current role, I monitor operational incidents, document events, assess severity
+                    and escalate when required, handling 10-20+ cases per shift. Alongside this, I work as an
+                    AI Generalist Expert at Mercor. Both roles have sharpened skills directly relevant to SOC
+                    work: alert triage, attention to detail and clear structured reporting under pressure.
                 </p>
 
                 <p>
                     <b>Current Focus</b>
-                    <br>• Deepening SIEM and cloud security skills, including Microsoft Sentinel Architecture
+                    <br>• Working through TryHackMe's SOC Level 2 path
+                    <br>• Deepening SIEM and cloud security skills, including Microsoft Sentinel architecture
                     <br>• Strengthening Linux and network-level investigation through hands-on practice
                     <br>• Expanding my GitHub portfolio with new SOC investigations and case studies
-                    <br>• Preparing for Tier 1 SOC analyst applications and technical interviews
                 </p>
 
                 <p>
-                    I've also completed the Google Cybersecurity Professional Certificate, covering networking, 
-                    Linux, incident documentation, risk assessment, and security controls, and I've built on that 
-                    foundation through hands-on labs focused on defensive security operations.
-                </p>
-
-                <p>
-                    I bring a calm, analytical approach to problem-solving and work well in structured, 
-                    high-responsibility environments. My goal is to secure a SOC Analyst role 
-                    where I can apply my incident-handling background, hands-on technical skills, and 
-                    continuous learning mindset to monitor, analyse, and respond to security incidents effectively.
+                    I bring a calm, analytical approach to problem-solving and work well in structured,
+                    high-responsibility environments. My goal is to secure a Tier 1 SOC Analyst role where I
+                    can apply my incident-handling background, hands-on technical skills and continuous
+                    learning mindset to monitor, analyse and respond to security incidents effectively.
                 </p>
             </div>
             <img src="img/charles02.jpg" alt="Charles working at a desk" class="about-me__img">
             <p>
                 🔗 View my cybersecurity portfolio on GitHub:
-                <a href="https://github.com/ChuChu145" target="_blank">GitHub Profile</a>
+                <a href="https://github.com/ChuChu145" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
             </p>
         </section>
 
         <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My Projects</h2>
-            <p class="section__subtitle section__subtitle--work">Cybersecurity projects and technical work</p>
+            <p class="section__subtitle section__subtitle--work">SOC investigations and incident response work</p>
             <div class="portfolio">
-                 <a href="https://github.com/ChuChu145/soc-analyst-labs" class="portfolio__item">
+                <a href="https://github.com/ChuChu145/soc-analyst-labs" class="portfolio__item" target="_blank" rel="noopener noreferrer">
                     <img src="img/cybersecurity.jpg" alt="SOC Analyst Labs" class="portfolio__img">
+                    <h3>SOC Analyst Labs</h3>
+                    <p>SIEM investigations in Splunk, Sentinel and Elastic.</p>
                 </a>
 
-                <a href="https://github.com/ChuChu145/incident-response-notes" class="portfolio__item">
-                    <img src="img/incident.jpg" alt="Incident Response Experience" class="portfolio__img">
+                <a href="https://github.com/ChuChu145/incident-response-notes" class="portfolio__item" target="_blank" rel="noopener noreferrer">
+                    <img src="img/incident.jpg" alt="Incident Response Notes" class="portfolio__img">
+                    <h3>Incident Response Notes</h3>
+                    <p>Structured write-ups of investigation and response steps.</p>
                 </a>
-                <a href="/portfolio-item.html" class="portfolio__item">
-                    <img src="img/responsive_design.jpg" alt="web page" class="portfolio__img">
-                </a>
-                <a href="/portfolio-item2.html" class="portfolio__item">
-                    <img src="img/blog_journal.jpg" alt="personal blog" class="portfolio__img">
-                </a>
-                <a href="/portfolio-item3.html" class="portfolio__item">
-                    <img src="img/spalsh_page.jpg" alt="promo web page" class="portfolio__img">
-                </a>    
             </div>
         </section>
 
         <section class="my-certificates" id="certificates">
             <h2 class="section__title section__title--certificates">Certificates</h2>
-            <p class="section__subtitle section__subtitle--certificates">Verified credentials & certifications</p>
-            
+            <p class="section__subtitle section__subtitle--certificates">Verified credentials and certifications</p>
+
             <div class="certificates">
                 <div class="certificate-card">
                     <img src="img/securityplus.jpg" alt="Security+ Logo" class="certificate-logo">
                     <h3 class="certificate-title">CompTIA Security+ (SY0-701)</h3>
-                    <a href="https://www.credly.com/badges/de195ced-5cd1-44e2-92f8-9cf9362dc942/public_url" 
-                    class="btn btn-cert" target="_blank">View Credential</a>
+                    <a href="https://www.credly.com/badges/de195ced-5cd1-44e2-92f8-9cf9362dc942/public_url"
+                    class="btn btn-cert" target="_blank" rel="noopener noreferrer">View Credential</a>
                 </div>
 
                 <div class="certificate-card">
                     <img src="img/Sal1.jpg" alt="SAL1 Logo" class="certificate-logo">
-                    <h3 class="certificate-title">SAL1 Certificate</h3>
-                    <a href="https://www.credly.com/earner/earned/badge/872518ce-3e26-4a87-b813-42276db44e12" 
-                    class="btn btn-cert" target="_blank">View Credential</a>
+                    <h3 class="certificate-title">TryHackMe SAL1 (Security Analyst Level 1)</h3>
+                    <a href="https://www.credly.com/earner/earned/badge/872518ce-3e26-4a87-b813-42276db44e12"
+                    class="btn btn-cert" target="_blank" rel="noopener noreferrer">View Credential</a>
                 </div>
 
                 <div class="certificate-card">
                     <img src="img/google.jpg" alt="Google Logo" class="certificate-logo">
                     <h3 class="certificate-title">Google Cybersecurity Professional Certificate</h3>
-                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/8R9UHWZJOGP9" 
-                    class="btn btn-cert" target="_blank">View Credential</a>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/8R9UHWZJOGP9"
+                    class="btn btn-cert" target="_blank" rel="noopener noreferrer">View Credential</a>
                 </div>
 
                 <div class="certificate-card">
-                    <img src="img/scrimba.jpg" alt="Frontend Logo" class="certificate-logo">
-                    <h3 class="certificate-title"> Scrimba Frontend Developer Career Path</h3>
-                    <a href="https://scrimba.com/certificate-cert2uNjfK9m1uNviiRHk8UeAgqbiFJAKba7Pmi" 
-                    class="btn btn-cert" target="_blank">View Credential</a>
+                    <img src="img/scrimba.jpg" alt="Scrimba Logo" class="certificate-logo">
+                    <h3 class="certificate-title">Scrimba Frontend Developer Career Path</h3>
+                    <a href="https://scrimba.com/certificate-cert2uNjfK9m1uNviiRHk8UeAgqbiFJAKba7Pmi"
+                    class="btn btn-cert" target="_blank" rel="noopener noreferrer">View Credential</a>
                 </div>
             </div>
         </section>
 
-
         <section class="personal-section" id="personal">
             <h2 class="section__title section__title--personal">Outside the Screen</h2>
-            <p class="section__subtitle section__subtitle--personal">Powerlifting & Mental Focus</p>
+            <p class="section__subtitle section__subtitle--personal">Powerlifting, Discipline & Resilience</p>
             <div class="about-me__body">
-                <p>Beyond my tech journey, I’m a dedicated powerlifter. The discipline and consistency required in training mirror my approach to cybersecurity: structured, focused, and always improving. Powerlifting has helped me build the mental endurance and persistence I apply to solving complex security challenges.</p>
+                <p>
+                    Beyond my tech journey, I'm a dedicated powerlifter. The discipline and consistency required
+                    in training mirror my approach to cybersecurity: structured, focused and always improving.
+                </p>
+                <p>
+                    I recently featured in a YouTube interview talking about mindset, discipline and resilience,
+                    how lifting carries over into the rest of life, and my move into cybersecurity.
+                    <br>
+                    <a href="YOUR_YOUTUBE_LINK" target="_blank" rel="noopener noreferrer">▶ Watch the interview</a>
+                </p>
             </div>
             <img src="img/weightlifting.jpg" alt="Charles in a powerlifting event" class="personal__img">
         </section>
 
         <footer class="footer">
-            <a href="mailto:bladger1@gmail.com" class="footer__link">charles.emejulu.e@gmail.com</a>
+            <!-- Make sure the mailto address and the visible text match -->
+            <a href="mailto:charles.emejulu.e@gmail.com" class="footer__link">charles.emejulu.e@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/ChuChu145">
+                    <a class="social-list__link" href="https://github.com/ChuChu145" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/charles-emejulu-3802152b3/">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/charles-emejulu-3802152b3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="YOUR_TRYHACKME_PROFILE_LINK" target="_blank" rel="noopener noreferrer" aria-label="TryHackMe">
+                        <i class="fas fa-shield-alt"></i>
                     </a>
                 </li>
             </ul>
         </footer>
         <script type="module" src="js/index.js"></script>
-        
     </body>
 </html>

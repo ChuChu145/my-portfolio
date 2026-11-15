@@ -662,3 +662,26 @@ header {
     padding: 0.6em 1.2em;
     border-radius: 5px;
 }
+
+/* Project card text */
+
+.portfolio__item {
+    display: block;
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.portfolio__img {
+    display: block;
+    width: 100%;
+}
+
+.portfolio__item h3 {
+    margin: 0.75em 1em 0.25em;
+}
+
+.portfolio__item p {
+    margin: 0 1em 1em;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
