@@ -729,3 +729,15 @@ header {
 .service__link:focus {
     color: var(--color-accent);
 }
+
+/* Project cards: fixed image height so the title and description show */
+
+.portfolio__img {
+    height: 200px;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+    transform: none;
+    opacity: .75;
+}
